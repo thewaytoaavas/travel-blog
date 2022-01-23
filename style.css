@@ -1,0 +1,272 @@
+body {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  min-height: 100vh;
+}
+
+.card {
+  background: rgb(138, 131, 131);
+  width: 350px;
+  margin: 10px;
+  /* min-height: 300px; */
+  padding-bottom: 20px;
+  box-shadow: -5px 5px 5px 5px rgb(36, 34, 35);
+}
+/* ======.global-msg====== */
+.global-msg {
+  background: rgb(2, 2, 61);
+  color: white;
+  padding: 10px 0;
+}
+.top-msg {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.h3 {
+  text-transform: uppercase;
+  color: orangered;
+}
+button {
+  background: orangered;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  float: right;
+  box-shadow: -5px 5px 5px 5px;
+}
+.icons i {
+  font-size: 30px;
+}
+/* =========header====== */
+.header {
+  background: rgb(158, 154, 154);
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li {
+  margin: 16px;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  color: blue;
+}
+.menu i {
+  display: none;
+}
+
+.logo {
+  font-family: "Neonderthaw", cursive;
+}
+
+/* ======hero====== */
+/* .hero {
+  min-height: 70vh;
+  background: url(https://images.unsplash.com/photo-1641041375081-1511939556fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2971&q=80)
+    no-repeat center center;
+  background-size: cover; 
+} */
+
+.hero {
+  min-height: 80vh;
+  background: url(./assests/hero.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: black;
+  opacity: 0.7;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px grey;
+}
+
+/* =====Latest Post====== */
+
+.latest-section {
+  margin-top: 60px;
+}
+.latest-content {
+  display: flex;
+  flex-direction: row;
+}
+.latest {
+  width: 70%;
+}
+
+.latest article {
+  margin-top: 100px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: row;
+}
+.post-content img {
+  width: 180px;
+  height: 30vh;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: -10px 10px 15px 5px rgb(63, 29, 29);
+}
+
+.info {
+  margin: 0 20px;
+}
+date {
+  background: purple;
+  padding: 5px 10;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+/* ==========aside======= */
+.links {
+  background: antiquewhite;
+  width: 30%;
+  border-radius: 5px;
+  padding: 32px 16px;
+  color: blue;
+}
+
+.links h3 {
+  color: brown;
+}
+
+.country {
+  margin-top: 64px;
+  color: orangered;
+}
+
+/* =========rec section======= */
+
+.rec {
+  margin-top: 64px;
+}
+
+.rec-content {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.rec-content img {
+  width: 100%;
+}
+
+/* ===========subscriber======= */
+.subscribe {
+  background: cornflowerblue;
+  margin: auto;
+  min-height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 32px;
+  border: olive;
+  /* border: top left radius 130px;; */
+}
+
+.subscribe input {
+  padding: 10px;
+  border: none;
+  line-height: 20px;
+}
+
+[type="submit"] {
+  background: orangered;
+  border-radius: 5px;
+}
+
+/* =========Footer section======== */
+.footer {
+  background: rgb(35, 33, 33);
+  padding: 64px 0;
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* ========Media queries======= */
+@media (max-width: 768px) {
+  .menu {
+    height: 62px;
+  }
+
+  .menu i {
+    display: block;
+  }
+  .menu ul {
+    display: none;
+  }
+  .latest-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .latest {
+    width: 100%;
+  }
+  .links {
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .by .country {
+    margin-top: 0;
+  }
+  .rec-content {
+    display: flex;
+    flex-direction:column;
+}
+@media (max-width:480px) {
+  .post-content {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .post-content img {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .latest article {
+
+  }
+  .links {
+   display:flex;
+   flex-direction: column;
+  }
+  .subscribe form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+
+  }
+  .subscribe form input {
+    margin-bottom: 16px;
+    
+  }
+  
+}
